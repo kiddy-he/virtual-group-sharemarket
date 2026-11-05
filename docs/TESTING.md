@@ -2,6 +2,8 @@
 
 ## 可复现命令
 
+先按 README 安装项目；构建产物还需 `python -m pip install build`。
+
 ```bash
 python -m unittest discover -s src/astrbot_plugin_sharemarket/tests -v
 npm test

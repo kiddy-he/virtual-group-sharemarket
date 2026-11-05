@@ -39,12 +39,13 @@ git clone https://github.com/kiddy-he/virtual-group-sharemarket.git
 cd virtual-group-sharemarket
 python3 -m venv .venv
 . .venv/bin/activate
+python -m pip install 'setuptools>=77' wheel
 python -m pip install -r requirements-lock.txt
 python -m pip install --no-build-isolation --no-deps -e .
 sharemarket serve --state-dir state/shared --market-id shared --config config/market.example.json
 ```
 
-如果环境未提供 `wheel`，先运行 `python -m pip install 'setuptools>=77' wheel`。也可以直接 `python -m pip install .`，由 pip 解析兼容的依赖版本。示例使用 24 小时加速市场：20 分钟一个虚拟交易日、3 秒一个 tick。
+也可以直接 `python -m pip install .`，由 pip 解析兼容的依赖版本。示例使用 24 小时加速市场：20 分钟一个虚拟交易日、3 秒一个 tick。
 
 第二个终端，激活相同虚拟环境：
 
