@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "virtual-group-sharemarket"
+version = "0.1.0"
+description = "Standalone transactional virtual stock market for group chat bots"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE", "THIRD_PARTY_NOTICES.md"]
+authors = [{name = "kiddy-he"}]
+dependencies = ["aiosqlite>=0.19,<1", "Pillow>=10,<14", "numpy>=1.26.4,<3"]
+classifiers = ["Programming Language :: Python :: 3", "Operating System :: POSIX :: Linux", "Topic :: Games/Entertainment :: Simulation"]
+
+[project.scripts]
+sharemarket = "astrbot_plugin_sharemarket.runtime:main"
+sharemarket-rpc = "astrbot_plugin_sharemarket.client:main"
+
+[project.urls]
+Repository = "https://github.com/kiddy-he/virtual-group-sharemarket"
+Issues = "https://github.com/kiddy-he/virtual-group-sharemarket/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]

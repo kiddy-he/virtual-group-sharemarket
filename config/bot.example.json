@@ -1,0 +1,21 @@
+{
+  "enabled": true,
+  "stateRoot": "state",
+  "privateQueries": true,
+  "privateMarket": "shared",
+  "adminIds": ["700000001"],
+  "groups": {"700000101": "shared", "700000102": "second"},
+  "markets": {
+    "shared": {"enabled": true, "stateDir": "state/shared"},
+    "second": {"enabled": true, "stateDir": "state/second"}
+  },
+  "news": {"enabled": false, "accountId": "bot", "personaName": "市场播报员"},
+  "llm": {
+    "enabled": false,
+    "api": "chat-completions",
+    "baseUrl": "https://api.example.invalid/v1",
+    "model": "your-text-model",
+    "apiKeyEnv": "SHAREMARKET_LLM_API_KEY",
+    "timeoutMs": 60000
+  }
+}

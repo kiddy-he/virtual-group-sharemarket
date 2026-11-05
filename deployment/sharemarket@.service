@@ -1,0 +1,17 @@
+# User service EXAMPLE. Copy to ~/.config/systemd/user/ only after reviewing paths.
+[Unit]
+Description=Virtual group sharemarket (%i)
+
+[Service]
+Type=simple
+WorkingDirectory=%h/virtual-group-sharemarket
+ExecStart=%h/virtual-group-sharemarket/.venv/bin/sharemarket serve --state-dir state/%i --market-id %i --config config/local-%i.json
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=45
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=default.target

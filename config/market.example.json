@@ -1,0 +1,8 @@
+{
+  "modelVersion": "causal-v2",
+  "npcTrading": true,
+  "retentionDays": 90,
+  "artifactRetentionHours": 24,
+  "features": {"ipo": true, "margin": true, "props": true, "season": false, "quests": true},
+  "rules": {"market_mode": "247", "day_seconds": 1200, "tick_seconds": 3, "initial_cash": 1000000}
+}

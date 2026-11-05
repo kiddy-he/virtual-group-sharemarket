@@ -1,0 +1,4 @@
+# Tested on CPython 3.12 / Linux. Not a hash-locked cross-platform lockfile.
+aiosqlite==0.22.1
+Pillow==13.0.0
+numpy==1.26.4

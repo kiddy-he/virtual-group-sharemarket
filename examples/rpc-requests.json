@@ -1,0 +1,7 @@
+{
+  "health": {"method": "health"},
+  "catalogue": {"method": "catalogue"},
+  "open": {"method": "account", "params": {"action": "open"}, "actor": {"senderId": "700000001", "accountId": "bot", "scope": "private", "identity": "guest", "nickname": "示例玩家"}, "operation_id": "example-open-1"},
+  "overview": {"method": "query", "params": {"action": "overview", "industry": "银行"}, "actor": {"senderId": "700000001", "accountId": "bot", "scope": "private", "identity": "guest"}, "operation_id": "example-overview-1"},
+  "buy": {"method": "trade", "params": {"action": "buy", "code": "600003", "quantity": 100}, "actor": {"senderId": "700000001", "accountId": "bot", "scope": "private", "identity": "guest"}, "operation_id": "example-buy-1"}
+}

@@ -1,0 +1,11 @@
+{
+  "name": "virtual-group-sharemarket",
+  "version": "0.1.0",
+  "description": "Local JSON-lines SDK and public-event news adapters for a virtual group stock market",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "engines": {"node": ">=24.15.0"},
+  "exports": {".": "./sdk/adapter.mjs", "./rpc": "./sdk/rpc.mjs", "./news": "./sdk/sharemarket-news-content.js"},
+  "scripts": {"test": "node --test tests/*.test.mjs"}
+}
